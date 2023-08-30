@@ -1,3 +1,8 @@
+var express = require("express");
+var cors = require("cors");
+var app = express();
+
+app.use(cors());
 const jsonServer = require("json-server");
 const auth = require("json-server-auth");
 
