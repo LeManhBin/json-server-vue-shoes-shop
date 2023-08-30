@@ -1,11 +1,11 @@
 var express = require("express");
 var cors = require("cors");
-app.use(cors());
+
 const jsonServer = require("json-server");
 const auth = require("json-server-auth");
 
 const app = jsonServer.create();
-
+app.use(cors());
 const router = jsonServer.router("db.json");
 
 // /!\ Bind the router db to the app
